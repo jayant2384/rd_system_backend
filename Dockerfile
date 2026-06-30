@@ -6,8 +6,8 @@ COPY . .
 
 RUN chmod +x gradlew
 
-RUN ./gradlew bootJar --no-daemon
+RUN ./gradlew clean bootJar --no-daemon
 
 EXPOSE 8080
 
-CMD ["java","-jar","build/libs/rd_system_backend-0.0.1-SNAPSHOT.jar"]
+CMD ["sh", "-c", "java -jar build/libs/*.jar"]]
