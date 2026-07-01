@@ -10,4 +10,4 @@ RUN ./gradlew clean bootJar --no-daemon
 
 EXPOSE 8080
 
-CMD ["sh", "-c", "java -jar build/libs/*.jar"]]
+CMD ["java","-jar","build/libs/nskrdsystem-0.0.1-SNAPSHOT.jar"]
